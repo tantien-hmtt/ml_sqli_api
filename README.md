@@ -17,7 +17,8 @@ SQL Injection là một trong những loại tấn công nguy hiểm nhất mà 
 Trong bối cảnh phát triển mạnh mẽ của công nghệ thông tin và sự phổ biến của các ứng dụng dựa trên API, việc bảo vệ an ninh thông tin không chỉ đòi hỏi sự cải tiến liên tục mà còn yêu cầu sự sáng tạo và ứng dụng những công nghệ tiên tiến nhất. SQL Injection attacks là một trong những mối đe dọa nguy hiểm nhất đối với an ninh hệ thống, đặc biệt là đối với các hệ thống dựa trên API với việc xử lý dữ liệu và truy vấn cơ sở dữ liệu.
 
 ## Phân tích và thiết kế hệ thống
-(ml_sqli_api/atm/architec.png)
+
+![Kiến trúc hệ thống](ml_sqli_api/atm/system.png)
 
 ### 1. Các bên liên quan
 - **Data users**: Những người có quyền sử dụng dữ liệu trong database, cho phép truy cập và tải xuống dữ liệu để phục vụ trong công việc.
@@ -47,7 +48,7 @@ Trong bối cảnh phát triển mạnh mẽ của công nghệ thông tin và s
 - **Tăng cường bảo mật hệ thống**: Nâng cao khả năng phát hiện và ngăn chặn các cuộc tấn công thông qua việc triển khai các biện pháp bảo mật mạnh mẽ và thường xuyên cập nhật, kiểm tra lại hệ thống để đảm bảo an toàn liên tục.
 
 ## Giải pháp
-(atm/architec.pngatm/architec.png)
+![Kiến trúc giải pháp](atm/architec.pngatm/architec.png)
 ### 1. Kiến trúc hệ thống
 Nhóm đề xuất một kiến trúc về Web API có tích hợp module detection vào việc xử lý và phát hiện các request khi API, nhận dạng các request có an toàn hay không trước khi thực hiện các bước tiếp theo như xác thực, phân quyền.
 
@@ -59,7 +60,7 @@ Nhóm đề xuất một kiến trúc về Web API có tích hợp module detect
 - **API**: API là cơ chế cho phép hai thành phần phần mềm giao tiếp với nhau bằng một tập hợp các định nghĩa và giao thức. API gateway là một công cụ quản lý API nằm giữa các máy khách và backend service, hoạt động như một reverse proxy, chấp nhận tất cả các lệnh gọi API, tìm nạp và tổng hợp các tài nguyên thích hợp trước khi gửi phản hồi cho mỗi yêu cầu API.
 
 ## Triển khai
-(atm/model.png)
+![Kiến trúc model](atm/model.png)
 ### 1. Chuẩn bị dataset
 Chuẩn bị dữ liệu từ các nguồn để đào tạo mô hình, bao gồm các mẫu dữ liệu bình thường và dữ liệu có chứa các dấu hiệu của SQL Injection. Các bước này bao gồm:
 - **Thu thập dữ liệu**: Từ các nguồn đáng tin cậy và bao gồm cả các dữ liệu được gán nhãn.
@@ -81,4 +82,4 @@ Kiểm thử hệ thống với các dữ liệu mới để đánh giá hiệu 
 ### 1. Kết quả đạt được
 Hệ thống đã được thử nghiệm và cho thấy khả năng phát hiện tấn công SQL Injection với độ chính xác cao, đảm bảo an toàn cho hệ thống API. Hệ thống có khả năng tự động học hỏi và cải thiện hiệu suất phát hiện qua thời gian.
 
-(atm/result.png)
+![kết quả](atm/result.png)
