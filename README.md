@@ -48,7 +48,7 @@ Trong bối cảnh phát triển mạnh mẽ của công nghệ thông tin và s
 - **Tăng cường bảo mật hệ thống**: Nâng cao khả năng phát hiện và ngăn chặn các cuộc tấn công thông qua việc triển khai các biện pháp bảo mật mạnh mẽ và thường xuyên cập nhật, kiểm tra lại hệ thống để đảm bảo an toàn liên tục.
 
 ## Giải pháp
-![Kiến trúc giải pháp](atm/architec.pngatm/architec.png)
+![Kiến trúc giải pháp](atm/architec.png)
 ### 1. Kiến trúc hệ thống
 Nhóm đề xuất một kiến trúc về Web API có tích hợp module detection vào việc xử lý và phát hiện các request khi API, nhận dạng các request có an toàn hay không trước khi thực hiện các bước tiếp theo như xác thực, phân quyền.
 
