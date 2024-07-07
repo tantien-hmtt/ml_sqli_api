@@ -18,7 +18,7 @@ Trong bối cảnh phát triển mạnh mẽ của công nghệ thông tin và s
 
 ## Phân tích và thiết kế hệ thống
 
-![Kiến trúc hệ thống](ml_sqli_api/atm/system.png)
+![Kiến trúc hệ thống](atm/system.png)
 
 ### 1. Các bên liên quan
 - **Data users**: Những người có quyền sử dụng dữ liệu trong database, cho phép truy cập và tải xuống dữ liệu để phục vụ trong công việc.
